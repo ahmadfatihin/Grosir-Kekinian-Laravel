@@ -5,6 +5,22 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 
+.banner img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pilih-kategori .card {
+    border-radius: 15px;
+}
+
+.pilih-kategori img {
+    max-height: 150px;
+}
+
 :root {
     --blue: #3490dc;
     --indigo: #6574cd;
