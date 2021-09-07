@@ -18,7 +18,7 @@
 }
 
 .pilih-kategori img {
-    max-height: 150px;
+    max-height: 120px;
 }
 
 :root {
@@ -5100,7 +5100,7 @@ input[type="button"].btn-block {
 
 .card-subtitle {
     margin-top: -0.375rem;
-    margin-bottom: 0;
+    margin-bottom: -0.2rem;
 }
 
 .card-text:last-child {
