@@ -10,11 +10,11 @@
         <h3><strong>Pilih Kategori</strong></h3>
         <div class="row mt-3 text-center">
             @foreach ($kategoris as $kategori)
-            <div class="col-xs-4 col-sm-3 col-md-3">
+            <div class="col-6 col-md-3">
                 <div class="card shadow">
                     <div class="card-body text-center">
                       <img src="{{ url('Assets/kategori') }}/{{ $kategori->gambar }}" alt="" class="img-fluid"><br>
-                      <h5 class="card-subtitle text-center"><strong>{{ $kategori->nama }}</strong></h5>
+                      <h5 class="card-subtitle-kategori text-center"><strong>{{ $kategori->nama }}</strong></h5>
                     </div>
                 </div>
             </div>
@@ -26,10 +26,10 @@
         <h3><strong>Pilih Kategori</strong></h3>
         <div class="row mt-3 text-center">
             @foreach ($kategoris as $kategori)
-            <div class="col-xs-4 col-sm-3 col-md-3">
+            <div class="col-6 col-md-3">
                 <div class="card shadow">
                     <div class="card-body text-center">
-                      <img src="{{ url('Assets/kategori') }}/{{ $kategori->gambar }}" alt="" class="img-fluid"><br>
+                      <img src="{{ url('Assets/kategori') }}/{{ $kategori->gambar }}" alt="" class="img-fluid">
                       <h5 class="text-center"><strong>{{ $kategori->nama }}</strong></h5>
                     </div>
                 </div>
@@ -40,15 +40,26 @@
     </section>
 
     {{-- PRODUCT--}}
-    <section class="pilih-kategori mt-5">
-        <h3><strong>Product</strong></h3>
+    <section class="pilih-produk mt-5">
+        <h3><strong>Best Product</strong></h3>
         <div class="row mt-3">
             @foreach ($products as $product)
-            <div class="col-xs-6">
-                <div class="card shadow">
+            <div class="col-md-3">
+                <div class="card">
                     <div class="card-body text-center">
-                      <img src="{{ url('Assets/kategori') }}/{{ $product->gambar }}" alt="" class="img-fluid"><br>
-                      <h5 class="card-subtitle text-center"><strong>{{ $product->nama }}</strong></h5>
+                      <img src="{{ url('Assets/Produk') }}/{{ $product->gambar }}" alt="" class="img-fluid">
+                      <div class="row mt-2">
+                          <div class="col-md-12">
+                              <h5><strong>{{ $product->nama }}</strong></h5>
+                              <h5>Rp. {{ number_format($product->harga) }}</h5>
+                          </div>
+                      </div>
+                      <div class="row mt-2">
+                          <div class="col-md-12">
+                              <h5><strong>{{ $product->nama }}</strong></h5>
+                              <h5>Rp. {{ number_format($product->harga) }}</h5>
+                          </div>
+                      </div>
                     </div>
                 </div>
             </div>
