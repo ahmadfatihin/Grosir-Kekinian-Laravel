@@ -18,3 +18,4 @@ Auth::routes();
 
 Route::livewire('/', 'home')->name('home');
 Route::livewire('/home', 'home')->name('home');
+Route::livewire('/products', 'product-index')->name('home');
