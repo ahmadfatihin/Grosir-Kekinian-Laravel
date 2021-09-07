@@ -17,3 +17,4 @@ use Illuminate\Support\Facades\Auth;
 Auth::routes();
 
 Route::livewire('/', 'home')->name('home');
+Route::livewire('/home', 'home')->name('home');

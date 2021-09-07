@@ -1,8 +1,8 @@
 <div>
-    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-light bg-white">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
-                {{ config('app.name', 'Laravel') }}
+                <strong>{{ config('app.name', 'Laravel') }}</strong>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
@@ -14,6 +14,20 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('home') }}">Home</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          List Produk
+                        </a>
+                        
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                @foreach ($kategoris as $kategori)
+                                <a class="dropdown-item" href="#">{{ $kategori -> nama }}</a>
+                                @endforeach
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Semua Kategori</a>
+                            </div>
+                       
+                      </li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
