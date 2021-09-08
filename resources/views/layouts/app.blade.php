@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
     
     <!-- Styles -->
-    <link href="{{ asset('css/app.cssp') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('fontawesome/css/all.min.css') }}" rel="stylesheet">
     <livewire:scripts/>
     <livewire:styles/>

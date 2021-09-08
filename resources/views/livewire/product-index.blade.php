@@ -12,7 +12,7 @@
 
     <div class="row">
         <div class="col-md-9">
-            <h2>List<strong> Produk</strong></h2>
+            <h2>{{ $title }}</h2>
         </div>
         <div class="col">
             <div class="input-group mb-3">

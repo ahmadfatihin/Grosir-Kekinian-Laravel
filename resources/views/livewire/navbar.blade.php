@@ -21,7 +21,7 @@
                         
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 @foreach ($kategoris as $kategori)
-                                <a class="dropdown-item" href="#">{{ $kategori -> nama }}</a>
+                                <a class="dropdown-item" href="{{ route('products.kategori', $kategori->id) }}">{{ $kategori -> nama }}</a>
                                 @endforeach
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{   route('products')  }}">Semua Kategori</a>

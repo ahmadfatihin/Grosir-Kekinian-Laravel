@@ -26,8 +26,11 @@
 
     {{-- PRODUCT--}}
     <section class="product mt-5 mb-5">
-        <h3><strong>Best Product</strong></h3>
-        <div class="row mt-3">
+        <h3>
+            <strong>Best Products</strong>
+            <a href="{{ route('products') }}" class="btn btn-dark float-right"> &emsp;Lihat Semua &emsp;<i class="fas fa-eye"></i>&ensp;</a>
+        </h3>
+        <div class="row mt-4">
             @foreach ($products as $product)
             <div class="col-md-3">
                 <div class="card">
