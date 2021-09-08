@@ -21,10 +21,10 @@
     max-height: 120px;
 }
 
-.best-product img {
+.product img {
     max-height: 220px;
 }
-.best-product .card {
+.product .card {
     border-radius: 15px;
 }
 
@@ -3016,6 +3016,7 @@ fieldset:disabled a.btn {
     color: #fff;
     background-color: #343a40;
     border-color: #343a40;
+    border-radius: 10px;
 }
 
 .btn-dark:hover {
@@ -5306,10 +5307,10 @@ input[type="button"].btn-block {
 .breadcrumb {
     display: flex;
     flex-wrap: wrap;
-    padding: 0.75rem 1rem;
+    padding: 0;
     margin-bottom: 1rem;
     list-style: none;
-    background-color: #e9ecef;
+    background-color: transparent;
     border-radius: 0.25rem;
 }
 
@@ -5333,7 +5334,8 @@ input[type="button"].btn-block {
 }
 
 .breadcrumb-item.active {
-    color: #6c757d;
+    font-weight: bold;
+    color: #252627;
 }
 
 .pagination {

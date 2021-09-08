@@ -25,7 +25,7 @@
    
 
     {{-- PRODUCT--}}
-    <section class="best-product mt-5 mb-5">
+    <section class="product mt-5 mb-5">
         <h3><strong>Best Product</strong></h3>
         <div class="row mt-3">
             @foreach ($products as $product)

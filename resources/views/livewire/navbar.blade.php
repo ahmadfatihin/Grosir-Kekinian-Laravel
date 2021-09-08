@@ -24,7 +24,7 @@
                                 <a class="dropdown-item" href="#">{{ $kategori -> nama }}</a>
                                 @endforeach
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Semua Kategori</a>
+                                <a class="dropdown-item" href="{{   route('products')  }}">Semua Kategori</a>
                             </div>
                        
                       </li>
