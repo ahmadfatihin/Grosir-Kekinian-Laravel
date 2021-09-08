@@ -9,8 +9,26 @@
             </nav>
         </div>
     </div>
-    <h2>List<strong> Produk</strong></h2>
+
+    <div class="row">
+        <div class="col-md-9">
+            <h2>List<strong> Produk</strong></h2>
+        </div>
+        <div class="col">
+            <div class="input-group mb-3">
+                <input wire:model="search" type="text" class="form-control" placeholder="Search" aria-label="Search">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                      <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     {{-- If your happiness depends on money, you will never be happy with yourself. --}}
+    
+    
     <section class="product mb-5">
         <div class="row mt-4">
             @foreach ($products as $product)
