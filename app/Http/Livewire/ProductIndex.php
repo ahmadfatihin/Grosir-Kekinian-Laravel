@@ -7,7 +7,7 @@ use Livewire\Component;
 use Livewire\WithPagination;
 
 class ProductIndex extends Component
-{   
+{
     use WithPagination;
 
     public $search;
@@ -26,9 +26,9 @@ class ProductIndex extends Component
         }else {
             $products = Product::paginate(8);
         }
-      
+        
         return view('livewire.product-index', [
-            'products' => $products
+            'products' => $products,
             'title' => 'List Produk'
         ]);
     }
