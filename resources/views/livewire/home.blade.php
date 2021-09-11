@@ -10,9 +10,9 @@
         <h3><strong>Pilih Kategori</strong></h3>        
             <div class="row mt-3 text-center">
                 @foreach ($kategoris as $kategori)
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-3 mb-3">
                     <a href="{{ route('products.kategori', $kategori->id) }}">
-                    <div class="card shadow">
+                    <div class="card shadow mb-3">
                         <div class="card-body text-center">
                           <img src="{{ url('Assets/kategori') }}/{{ $kategori->gambar }}" alt="" class="img-fluid"><br>
                           <h5 class="card-subtitle-kategori text text-center"><strong>{{ $kategori->nama }}</strong></h5>

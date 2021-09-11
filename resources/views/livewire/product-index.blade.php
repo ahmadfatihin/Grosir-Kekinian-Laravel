@@ -30,34 +30,37 @@
     
     
     <section class="product mb-5">
-        <div class="row mt-4">
+        <div class="row mt-4 mb-2">
             @foreach ($products as $product)
-            <div class="col-md-3">
+            <div class="col-md-3 mb-3">
                 <div class="card">
                     <div class="card-body text-center">
                       <img src="{{ url('Assets/Produk') }}/{{ $product->gambar }}" alt="" class="img-fluid">
                       <div class="row mt-2">
-                            <div class="col-md-12">
-                              <h5><strong>{{ $product->nama }}</strong></h5>
-                              <h5>Rp. {{ number_format($product->harga) }}</h5>
-                            </div>                      
-                            </div>
-                                <div class="row mt-2">
-                                    <div class="col-md-12">
-                                        <a href="{{ route('products.detail', $product->id) }}" class="btn btn-dark btn-block">Detail</a>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-12">
+                            <h5><strong>{{ $product->nama }}</strong></h5>
+                            <h5>Rp. {{ number_format($product->harga) }}</h5>
+                          </div>                      
+                          </div>
+                              <div class="row mt-2 justify-content-center">
+                                  <div class="col-sm-11 col-md-12 ">
+                                      <a href="{{ route('products.detail', $product->id) }}" class="btn btn-dark btn-block ">Detail</a>
+                                  </div>
+                              </div>
+                          </div>     
+                    </div>
                 </div>
-            </div>
             @endforeach
-
-            <div class="row">
+            
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center">
                 <div class="col">
-                    {{ $products -> links() }}
+                    {{ $products->links() }}
                 </div>
             </div>
         </div>
+        
 
     </section>
 </div>
