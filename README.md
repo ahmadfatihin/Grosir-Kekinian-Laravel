@@ -10,7 +10,8 @@
 ## Sylvana Online Shop
 
 Web Online Shop Sylvana from https://shopee.co.id/sylvanastore
-Laravel 7.x
-Livewire 1.0
-Boostrap 4.6
-Fontawesome
+
+- Laravel 7.x
+- Livewire 1.0
+- Boostrap 4.6
+- Fontawesome
