@@ -9,7 +9,7 @@ class PesananDetail extends Model
     protected $fillable = [
         'jumlah_pesanan',
         'total_harga',
-        'namaset',
+        'variasi',
         'nama',
         'nomor',
         'product_id',

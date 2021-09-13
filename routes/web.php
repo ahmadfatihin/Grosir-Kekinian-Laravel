@@ -21,3 +21,4 @@ Route::livewire('/home', 'home')->name('home');
 Route::livewire('/products', 'product-index')->name('products');
 Route::livewire('/products/kategori/{kategoriId}', 'product-kategori')->name('products.kategori');
 Route::livewire('/products/{id}', 'product-detail')->name('products.detail');
+Route::livewire('/keranjang','keranjang')->name('keranjang');
