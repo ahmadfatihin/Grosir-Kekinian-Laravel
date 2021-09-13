@@ -54,7 +54,7 @@ class ProductDetail extends Component
             ]);
 
             $pesanan = Pesanan::where('user_id', Auth::user()->id)->where('status',0)->first();
-            $pesanan->kode_pemesanan = 'JP-'.$pesanan->id;
+            $pesanan->kode_pemesanan = 'SS-'.$pesanan->id;
             $pesanan->update();
 
         }else {
