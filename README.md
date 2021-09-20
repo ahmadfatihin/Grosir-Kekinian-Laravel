@@ -7,9 +7,9 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
-## Sylvana Online Shop
+## Grosir Kekinian
 
-Web Online Shop Sylvana from https://shopee.co.id/sylvanastore
+Web Online Shop from https://shopee.co.id/sylvanastore
 
 - Laravel 7.x
 - Livewire 1.0
