@@ -10,8 +10,11 @@
 ## Grosir Kekinian
 
 Web Online Shop from https://shopee.co.id/sylvanastore
+Single Page App using Turbolink, Instant Product Search.
 
 - Laravel 7.x
 - Livewire 1.0
 - Boostrap 4.6
 - Fontawesome
+- Turbolink
+- Breeze
